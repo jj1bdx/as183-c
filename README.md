@@ -10,6 +10,8 @@
 
 ## Test result
 
+Results for every 100 million counts: `interval-log.txt`
+
 ```
 Internal state loop detected
 count = 6953607871644 y1 = 3172 y2 = 9814 y3 = 20125
