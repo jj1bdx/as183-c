@@ -14,7 +14,11 @@ l(6953607871644)/l(2)
 42.66089885144506525546
 ```
 
+See also <http://erlang.org/pipermail/erlang-bugs/2014-December/004728.html>
+
 ## how to compile
+
+Use `build.sh`, or:
 
 ```
 cc -O3 -o main main.c # main: internal state loop tester
