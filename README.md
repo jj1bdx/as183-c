@@ -1,10 +1,18 @@
 # AS183 PRNG algorithm internal state calculator in C
 
-A preliminary result running in OS X 10.10.1 of Mac Mini 2012 (2.6GHz Core i7) shows this in *less than 9 hours*:
+## Execution time example
+
+* FreeBSD 10.1-STABLE #56 r275872 (amd64)
+* On `Intel(R) Core(TM) i5-3427U CPU @ 1.80GHz (2294.84-MHz)`
+* 8h18m37s = 29917 seconds
+* Begin: Tue Dec 23 09:21:33 JST 2014
+* End:   Tue Dec 23 17:40:10 JST 2014
+
+## Test result
 
 ```
 Internal state loop detected
-count = 6953607871644, y1 = 3172, y2=9814, y3 = 20125
+count = 6953607871644 y1 = 3172 y2 = 9814 y3 = 20125
 ```
 
 `bc` command result says the cycle length is about `2^(42.661)`:
