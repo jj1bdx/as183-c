@@ -51,12 +51,12 @@ int main(int argc, char *argv[]) {
         y3 = (x3 * 170) % PRIME3;
         count++;
         if (count % (uint64_t)INTERVAL == 0) {
-            printf("count = %" PRIu64 ", y1 = %u, y2 = %u, y3 = %u\n",
+            printf("count = %" PRIu64 " y1 = %u y2 = %u y3 = %u\n",
                     count, y1, y2, y3);
         }
         if ((y1 == INIT1) && (y2 == INIT2) && (y3 == INIT3)) {
             printf("Internal state loop detected\n");
-            printf("count = %" PRIu64 ", y1 = %u, y2 = %u, y3 = %u\n",
+            printf("count = %" PRIu64 " y1 = %u y2 = %u y3 = %u\n",
                     count, y1, y2, y3);
             keeploop = 0;
             continue;

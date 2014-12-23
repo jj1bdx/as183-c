@@ -54,7 +54,7 @@ int main(int argc, char *argv[]) {
         y2 = (x2 * 172) % PRIME2;
         y3 = (x3 * 170) % PRIME3;
         count++;
-        printf("count = %" PRIu64 ", y1 = %u, y2 = %u, y3 = %u\n",
+        printf("count = %" PRIu64 " y1 = %u y2 = %u y3 = %u\n",
                 count, y1, y2, y3);
         x1 = y1;
         x2 = y2;
