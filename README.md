@@ -1,5 +1,7 @@
 # AS183 PRNG algorithm internal state calculator in C
 
+* This is a PoC code to show Erlang/OTP random module PRNG weakness.
+
 ## Execution time example
 
 * FreeBSD 10.1-STABLE #56 r275872 (amd64)
