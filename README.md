@@ -33,7 +33,13 @@ See also <http://erlang.org/pipermail/erlang-bugs/2014-December/004728.html>
 Use `build.sh`, or:
 
 ```
-cc -O3 -o main main.c # main: internal state loop tester
-cc -o main2 main.c # main2: dump all possible internal state values
+# main: internal state loop tester
+cc -O3 -o main main.c
+# main2: dump all possible internal state values
+cc -o main2 main.c
+# main3: check all internal states and
+#        find if any OTP random:uniform/1
+#        output value is less than < 1.0e-13
+cc -O3 -o main3 main3.c
 ```
 
