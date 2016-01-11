@@ -60,8 +60,8 @@ int main(int argc, char *argv[]) {
             (y2 / (double) PRIME2) +
             (y3 / (double) PRIME3);
         r2 = r - trunc(r);
-        if (fabs(r2) < 1.0e-10) {
-            printf("fabs(r2) < 1.0e-10\n");
+        if (fabs(r2) < 1.0e-13) {
+            printf("fabs(r2) < 1.0e-13\n");
             printf("count = %" PRIu64 " y1 = %u y2 = %u y3 = %u r2 = %e\n",
                     count, y1, y2, y3, r2);
             continue;
