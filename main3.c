@@ -61,10 +61,9 @@ int main(int argc, char *argv[]) {
             (y3 / (double) PRIME3);
         r2 = r - trunc(r);
         if (fabs(r2) < 1.0e-13) {
-            printf("fabs(r2) < 1.0e-13\n");
+            printf("fabs(r2) < 1.0e-13: ");
             printf("count = %" PRIu64 " y1 = %u y2 = %u y3 = %u r2 = %e\n",
                     count, y1, y2, y3, r2);
-            continue;
         }
         if ((y1 == INIT1) && (y2 == INIT2) && (y3 == INIT3)) {
             printf("Internal state loop detected\n");
