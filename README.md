@@ -28,6 +28,8 @@ l(6953607871644)/l(2)
 
 See also <http://erlang.org/pipermail/erlang-bugs/2014-December/004728.html>
 
+Execution of main3.c proved no Erlang/OTP `random:uniform/1` output is less than 1.0e-13.
+
 ## how to compile
 
 Use `build.sh`, or:
