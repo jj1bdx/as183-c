@@ -2,7 +2,7 @@
  * AS183 internal state loop testing code.
  * License: MIT license as follows:
  *
- * Copyright (c) 2014 Kenji Rikitake.
+ * Copyright (c) 2014-2016 Kenji Rikitake.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal

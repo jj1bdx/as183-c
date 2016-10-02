@@ -45,3 +45,7 @@ cc -o main2 main.c
 cc -O3 -o main3 main3.c
 ```
 
+## License
+
+The MIT License.
+
