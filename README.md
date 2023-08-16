@@ -1,8 +1,10 @@
 # AS183 PRNG algorithm internal state calculator in C
 
-* This is a PoC code to show Erlang/OTP random module PRNG weakness.
+This is a PoC code to show Erlang/OTP random module PRNG weakness.
 
 ## Execution time example
+
+### On FreeBSD in 2014
 
 * FreeBSD 10.1-STABLE #56 r275872 (amd64)
 * On `Intel(R) Core(TM) i5-3427U CPU @ 1.80GHz (2294.84-MHz)`
@@ -10,7 +12,7 @@
 * Begin: Tue Dec 23 09:21:33 JST 2014
 * End:   Tue Dec 23 17:40:10 JST 2014
 
-## Test result
+#### Test result
 
 Results for every 100 million counts: `interval-log.txt`
 
@@ -30,6 +32,15 @@ See also <http://erlang.org/pipermail/erlang-bugs/2014-December/004728.html>
 
 Execution of main3.c proved no Erlang/OTP `random:uniform/1` output is less than 1.0e-13.
 
+### Timing test on Mac mini 2023
+
+* Mac mini 2023, M2 Pro, arm64
+* 5h55m23s = 21313 seconds
+* Begin: Wed Aug 16 11:46:13 JST 2023
+* End:   Wed Aug 16 17:41:36 JST 2023
+
+The test result was the same as that on FreeBSD in 2014.
+
 ## how to compile
 
 Use `build.sh`, or:
@@ -47,5 +58,5 @@ cc -O3 -o main3 main3.c
 
 ## License
 
-The MIT License.
+The MIT License
 
