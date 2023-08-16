@@ -35,7 +35,7 @@ Execution of main3.c proved no Erlang/OTP `random:uniform/1` output is less than
 ### Timing test on Mac mini 2023
 
 * Mac mini 2023, M2 Pro, arm64
-* 5h55m23s = 21313 seconds
+* 5h55m23s = 21323 seconds
 * Begin: Wed Aug 16 11:46:13 JST 2023
 * End:   Wed Aug 16 17:41:36 JST 2023
 
